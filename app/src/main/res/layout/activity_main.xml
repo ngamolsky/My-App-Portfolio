@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/portfolio_title"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button1"
+        android:id="@+id/button"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView"
+        android:onClick="toast1"/>
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button2"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:onClick="toast2"/>
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button3"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:onClick="toast3"/>
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button4"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:onClick="toast4"
+        />
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button5"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:onClick="toast5"/>
+
+    <Button
+        style="@style/Buttons"
+        android:text="@string/button6"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:background="#F44336"
+        android:onClick="toast6"/>
+</RelativeLayout>
